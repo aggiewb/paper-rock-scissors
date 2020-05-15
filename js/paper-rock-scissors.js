@@ -18,11 +18,11 @@ function playRound(computerMove, userMove){
         document.getElementById("win").innerHTML = "Computer: Paper vs. You: Rock.<br>The computer wins!";
     } else if(computerMove === userMove){
         computerMove = computerMove.charAt(0).toUpperCase() + computerMove.slice(1);
-        document.getElementById("win").innerHTML = "Compuer and You: " + computerMove + ".<br> TIE!";
+        document.getElementById("win").innerHTML = "Computer and You: " + computerMove + ".<br> TIE!";
     } else {
         computerMove = computerMove.charAt(0).toUpperCase() + computerMove.slice(1);
         userMove = userMove.charAt(0).toUpperCase() + userMove.slice(1);
-        document.getElementById("win").innerHTML = "Computer:" + "You win!";
+        document.getElementById("win").innerHTML = "Computer: " + computerMove + " vs. You: " + userMove + ".<br>You win!";
     }
 }
 

@@ -2,8 +2,24 @@ body {
     font-family: 'Luckiest Guy', cursive;
     font-size: 40px;
     text-align: center;
+    background-color: #FFE548;
 }
 
 p {
     font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: #FFE548;
+    margin: 10px;
+}
+
+button:hover {
+    outline: black 10px solid;
+    background-color: black;
 }

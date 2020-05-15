@@ -31,3 +31,6 @@ function chooseComputerMove(userMove){
     computerMove = moves[Math.floor((Math.random() * 3))];
     playRound(computerMove, userMove);
 }
+
+var year = new Date().getFullYear();
+document.querySelector("footer").innerHTML = "Aggie Wheeler Bateman &copy; " +  year + " <a href=\"mailto:aggiewbdev\">aggiewbdev@gmail.com</a>";

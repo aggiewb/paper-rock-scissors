@@ -3,14 +3,14 @@ var computerMove = moves[Math.floor((Math.random() * 3))]
 
 function rockPaperScissors(firstPlayerMove, secondPlayerMove){
     if(computerMove === "rock" && userMove === "scissors"){
-        console.log("The computer wins!");
+        document.getElementById("win").textContent = "The computer wins!";
     } else if(computerMove === "scissors" && userMove === "paper"){
-        console.log("The computer wins!");
+        getElementById("win").textContent = "The computer wins!";
     } else if(computerMove === "paper" && userMove === "rock"){
-        console.log("The computer wins!");
+        getElementById("win").textContent = "The computer wins!";
     } else if(computerMove === userMove){
-        console.log("TIE!");
+        getElementById("win").textContent = "TIE!";
     } else {
-        console.log("You win!");
+        getElementById("win").textContent = "You win!";
     }
 }

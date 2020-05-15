@@ -1,16 +1,27 @@
-var moves = ["paper", "rock", "scissors"];
-var computerMove = moves[Math.floor((Math.random() * 3))]
+document.getElementById("paper").addEventListener("click", function(){
+    chooseComputerMove("paper");
+}); 
+document.getElementById("rock").addEventListener("click", function(){
+    chooseComputerMove("rock");
+});
+document.getElementById("scissors").addEventListener("click", function(){
+    chooseComputerMove("scissors");
+}); 
 
-function rockPaperScissors(firstPlayerMove, secondPlayerMove){
+function rockPaperScissors(computerMove, userMove){
+    console.log(computerMove + " " + userMove);
     if(computerMove === "rock" && userMove === "scissors"){
-        document.getElementById("win").textContent = "The computer wins!";
+        document.getElementById("win").innerHTML = "Computer: Rock vs. You: Scissors.<br>The computer wins!";
     } else if(computerMove === "scissors" && userMove === "paper"){
-        getElementById("win").textContent = "The computer wins!";
+        document.getElementById("win").innerHTML = "Computer: Scissors vs. You: Paper.<br>The computer wins!";
     } else if(computerMove === "paper" && userMove === "rock"){
-        getElementById("win").textContent = "The computer wins!";
+        document.getElementById("win").innerHTML = "Computer: Paper vs. You: Rock.<br>The computer wins!";
     } else if(computerMove === userMove){
-        getElementById("win").textContent = "TIE!";
+        computerMove = computerMove.charAt(0).toUpperCase() + computerMove.slice(1);
+        document.getElementById("win").innerHTML = "Compuer and You: " + computerMove + ".<br> TIE!";
     } else {
-        getElementById("win").textContent = "You win!";
+        computerMove = computerMove.charAt(0).toUpperCase() + computerMove.slice(1);
+        userMove = userMove.charAt(0).toUpperCase() + userMove.slice(1);
+        document.getElementById("win").innerHTML = "Computer:" + "You win!";
     }
 }

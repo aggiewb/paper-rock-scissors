@@ -1,13 +1,13 @@
 function rockPaperScissors(firstPlayerMove, secondPlayerMove){
-    if(firstPlayerMove === "rock" && secondPlayerMove === "scissors"){
-        console.log("Player 1 wins!");
-    } else if(firstPlayerMove === "scissors" && secondPlayerMove === "paper"){
-        console.log("Player 1 wins!");
-    } else if(firstPlayerMove === "paper" && secondPlayerMove === "rock"){
-        console.log("Player 1 wins!");
-    } else if(firstPlayerMove === secondPlayerMove){
+    if(computerMove === "rock" && userMove === "scissors"){
+        console.log("The computer wins!");
+    } else if(computerMove === "scissors" && userMove === "paper"){
+        console.log("The computer wins!");
+    } else if(computerMove === "paper" && userMove === "rock"){
+        console.log("The computer wins!");
+    } else if(computerMove === userMove){
         console.log("TIE!");
     } else {
-        console.log("Player 2 wins!");
+        console.log("You win!");
     }
 }

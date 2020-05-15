@@ -8,7 +8,7 @@ document.getElementById("scissors").addEventListener("click", function(){
     chooseComputerMove("scissors");
 }); 
 
-function rockPaperScissors(computerMove, userMove){
+function playRound(computerMove, userMove){
     console.log(computerMove + " " + userMove);
     if(computerMove === "rock" && userMove === "scissors"){
         document.getElementById("win").innerHTML = "Computer: Rock vs. You: Scissors.<br>The computer wins!";
@@ -26,7 +26,7 @@ function rockPaperScissors(computerMove, userMove){
     }
 }
 
-function chooseComputerMove(userMove){
+function playRound(userMove){
     var moves = ["paper", "rock", "scissors"];
     computerMove = moves[Math.floor((Math.random() * 3))];
     rockPaperScissors(computerMove, userMove);

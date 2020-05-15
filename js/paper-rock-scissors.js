@@ -25,3 +25,9 @@ function rockPaperScissors(computerMove, userMove){
         document.getElementById("win").innerHTML = "Computer:" + "You win!";
     }
 }
+
+function chooseComputerMove(userMove){
+    var moves = ["paper", "rock", "scissors"];
+    computerMove = moves[Math.floor((Math.random() * 3))];
+    rockPaperScissors(computerMove, userMove);
+}

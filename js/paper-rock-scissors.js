@@ -26,8 +26,8 @@ function playRound(computerMove, userMove){
     }
 }
 
-function playRound(userMove){
+function chooseComputerMove(userMove){
     var moves = ["paper", "rock", "scissors"];
     computerMove = moves[Math.floor((Math.random() * 3))];
-    rockPaperScissors(computerMove, userMove);
+    playRound(computerMove, userMove);
 }

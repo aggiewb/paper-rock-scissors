@@ -1,3 +1,6 @@
+var moves = ["paper", "rock", "scissors"];
+var computerMove = moves[Math.floor((Math.random() * 3))]
+
 function rockPaperScissors(firstPlayerMove, secondPlayerMove){
     if(computerMove === "rock" && userMove === "scissors"){
         console.log("The computer wins!");

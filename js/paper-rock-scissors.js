@@ -10,7 +10,6 @@
     }); 
 
     function playRound(computerMove, userMove){
-        console.log(computerMove + " " + userMove);
         if(computerMove === "rock" && userMove === "scissors"){
             document.getElementById("win").innerHTML = "Computer: Rock vs. You: Scissors.<br>The computer wins!";
         } else if(computerMove === "scissors" && userMove === "paper"){

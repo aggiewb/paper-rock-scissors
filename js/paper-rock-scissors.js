@@ -33,5 +33,5 @@
     }
 
     var year = new Date().getFullYear();
-    document.querySelector("footer").innerHTML = "Aggie Wheeler Bateman &copy; " +  year + "<a href=\"https://www.aggiewheelerbateman.com\" target=\"_blank\"> Personal Portfolio</a>";
+    document.querySelector("footer").innerHTML = "Aggie Wheeler Bateman &copy; " +  year + "<a href=\"https://www.aggiewb.com\" target=\"_blank\"> Personal Portfolio</a>";
 }());
